@@ -1,0 +1,15 @@
+{{#with index}}
+    {{>head}}
+    {{>header}}
+
+
+
+{{#each items}}
+    <li><a href="/{{this}}">{{this}}</a></li>
+{{/each}}
+
+
+    {{>footer}}
+    {{>foot}}
+
+{{/with}}
