@@ -26,7 +26,7 @@ gulp.task 'clean', ->
 gulp.task "templates", ->
   gulp.src("src/templates/*.hbs")
   .pipe(hb({
-      data: require "./src/templates/data.coffee"
+      data: new (require "./src/templates/data.coffee")
       partials: "src/templates/partials/*.hbs"
     }))
   .pipe rename (path)->

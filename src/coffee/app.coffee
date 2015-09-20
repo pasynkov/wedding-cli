@@ -1,3 +1,5 @@
-$ = require "jquery"
+window.$ = window.jQuery = $ = require "jquery"
+holder = require "holderjs"
+bootstrap = require "bootstrap"
 $(document).ready ->
-  $("#hello").html("im here")
+  $("[data-toggle=popover]").popover()
