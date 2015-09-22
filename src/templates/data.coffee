@@ -16,12 +16,13 @@ class TemplateData
           return false
         return name + ".html"
 
-    @young_page =
+    @wedding =
       title: "Страница свадьбы"
       wedding_menu: @getWeddingMenu "wedding"
       wedding:
         date: new Date("2015-08-23T00:00:00+0400")
       wedding_cards: @getWeddingCards()
+      void: "javascript:void(0)"
 
   getWeddingMenu: (active)->
 

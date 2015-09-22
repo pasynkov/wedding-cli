@@ -2,11 +2,14 @@
     {{>head}}
     {{>header}}
 
-
-
-{{#each items}}
-    <li><a href="/{{this}}">{{this}}</a></li>
-{{/each}}
+    <div class="page-header">
+        <h1>Странички</h1>
+    </div>
+    <div class="list-group">
+        {{#each items}}
+            <a class="list-group-item" href="/{{this}}">{{this}}</a>
+        {{/each}}
+    </div>
 
 
     {{>footer}}
